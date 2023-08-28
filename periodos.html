@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="styles/estilo.css">
+	<title>Periodos</title>
+</head>
+<header>
+   
+<section>
+<img src="images/logoarkos.png" id="logo">
+
+
+<input type="checkbox" id="toggle-1">
+<nav>
+
+<ul>
+
+
+   <li><a href="menuadmin.php">Regresar</a></li>
+     
+</nav>
+</section>
+</header>
+<body>
+	
+	<div class="form-body" text-align="left">
+		
+		<center><p class="text">Añadir Periodo</p> </center>
+
+		<form method="post" action="periodos.php">
+
+		<center><p class="text">Ingrese Año</p></center>
+		<input type="number" name="txtAño" placeholder="Ingrese año con numero" required>
+		
+<center>
+	<center><p class="text">Periodo</p></center>
+		
+		<select id="Descuento" name="txtPeriodo" style="width: 200px" > 
+			<option value="0"> Seleccione...</option>
+			<option value="Enero - Abril">Enero - Abril</option>
+			<option value="Mayo - Agosto">Mayo - Agosto</option>
+			<option value="Septiembre - Diciembre">Septiembre - Diciembre</option>
+				</select></center>
+
+		<button >Guardar</button>
+		
+	</form>
+	<button  class="btn btnn"> <a href="readPeriodo.php">Consultar o eliminar</a></button>
+		<center><img class="logoA" src="images/logoarkos.png"></center>
+
+
+	</div>
+	
+
+</body>
+</html>

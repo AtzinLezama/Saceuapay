@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="styles/estiloFormAdmin.css"/>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta http-equiv="Cache-Control" content="no-cache, mustrevalidate">
+	
+	<title>Formulario Admin</title>
+</head>
+<header>
+   
+<section>
+<img src="images/logoarkos.png" id="logo">
+
+<nav>
+<ul>
+<li><a href="menuadmin.php">Inicio</a></li>
+   
+     
+
+ </li>
+</ul>
+</nav>
+</section>
+</header>
+<body>
+
+	<form  action="http://localhost/Saceuapay/php/createUser.php" method="post">
+		<h1 align="center">Registro de Empleados</h1>
+		<h3>
+		
+		<label> Usuario :</label> &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+		<input type="text"  class="campo" name="txtUsuario" placeholder="Usuario" required autocomplete="off"><br><br>
+		
+		<label> Password  : </label>  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+		<input type="password" class="campo" name="txtPassword" placeholder="Password" required><br><br>
+
+		<label>Nombre :</label>  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp&nbsp &nbsp &nbsp &nbsp 
+		<input type="text" class="campo" name="txtNombre" placeholder="Nombre" required><br><br>
+
+		<label>Puesto :</label>  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+		<input type="text" class="campo" name="txtPuesto" placeholder="Puesto" required><br><br>
+
+		<label>	Email :</label>  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+		<input type="Email" class="campo" name="txtEmail" placeholder="Email" required><br><br>
+
+		<label>Telefono :</label>  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+		<input type="text" class="campo" name="txtTelefono" placeholder="Telefono" required><br><br>
+
+
+		<label> Tipo de usuario :</label>  &nbsp &nbsp &nbsp &nbsp
+		<select name="txtTipo" style="width: 280px" required> 
+			<option value="0"> Seleccione...</option>
+			<option value="1">Alumno</option>
+			<option value="2">Administracion general</option>
+			<option value="3"> Caja </option>
+			<option value="4"> Cobranza</option><br>
+		</select>
+		<br></h3><br><br><br>
+		
+		<a >
+			<input type="submit" name="admguardar" class="btn btnn" value="Registrar Usuario"></a>
+	
+
+</form>
+
+</body>
+</html>

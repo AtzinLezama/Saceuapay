@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.logoA{
+  width: 30%;
+  margin-top: 2%;
+  margin-left: 30%;
+
+}
+body {
+	align-items: center;
+	justify-content: center;
+	height: 10vh;
+	background: url(logo.jpg);
+	font-family: Arial, Helvetica, sans-serif;
+	background: linear-gradient(26.65deg, #34495e 50%, #2c3e50 50%);
+}
+
+.form-body {
+	width: 400px;
+	min-width: 300px;
+	border-radius: 10px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border: solid 1px #2564b9;
+	margin: 10px;
+	background-color: #2564b9;
+	margin-left: 40%;
+	margin-top: 1px;
+
+}
+.form-body img{
+	width: 150px;
+	display: block;
+	margin: 20px 0;
+}
+.text{
+	text-align: center;
+	font-size: 1.2rem;
+	font-weight: 600;
+	color: #fff;
+	margin-bottom: 25px;
+	margin-top: 17px;
+
+}
+.form-body textarea{
+	display: block;
+	margin: auto;
+	height: 40px;
+	width: 75%;
+	padding-left: 10px;
+	color: #000;
+	border: 1.5px solid #000;
+	border-radius: 2px;
+	font-family: Verdana, Geneva, Thahoma, sans-serif;
+	background-color: #fff;
+	border-top-left-radius: 10px;
+	font-size: 1rem;
+	outline: none;
+}
+.form-body select{
+	display: block;
+	margin: auto;
+	height: 40px;
+	width: 75%;
+	padding-left: 10px;
+	color: #000;
+	border: 1.5px solid #000;
+	border-radius: 2px;
+	font-family: Verdana, Geneva, Thahoma, sans-serif;
+	background-color: #fff;
+	border-top-left-radius: 10px;
+	font-size: 1rem;
+	outline: none;
+}
+.form-body label{
+	color: #fff;
+}
+.form-body input{
+	display: block;
+	margin: auto;
+	height: 40px;
+	width: 75%;
+	padding-left: 10px;
+	color: #000;
+	border: 1.5px solid #000;
+	border-radius: 2px;
+	font-family: Verdana, Geneva, Thahoma, sans-serif;
+	background-color: #fff;
+	border-top-left-radius: 10px;
+	font-size: 1rem;
+	outline: none;
+}
+.form-body input[type="password"] {
+	margin-top: 20px;
+}
+
+::placeholder {
+    color: none;
+    font-size: 1rem;
+} 
+.form-body input:hover {
+	transition: .5s;
+	border: 1px solid #000;
+	color:  #2266b2 ;
+}
+.form-body button{
+	display: block;
+	margin: auto;
+	margin-top: 25px;
+	margin-bottom: 30px;
+	height: 40px;
+	width: 80%;
+	background-color: lightgray;
+	color: ##000000
+;
+	border-radius: 2px;
+	cursor: pointer;
+	outline: none;
+	transition: all .5s ease;
+	font-size: 17px;
+}
+.form-body button:hover{
+	color: #cfffec;
+	border: 2px solid #000000;
+	background:  ##000000;
+} 
+
+*{text-decoration:none; list-style:none; margin:0px; padding:0px; outline:none;}
+
+section{
+    width:100%; 
+    max-width:1200px; 
+    margin:0px auto; 
+    display:table; 
+    position:relative;
+}
+
+
+header{
+    width:100%; 
+    display:table; 
+    background-color:#000; 
+    margin-bottom:50px;
+}
+#logo{float:left; width: 5.5%; margin-top: 0.45%;}
+nav{width:auto; float:right;}
+nav ul{display:table; float:right;}
+nav ul li{float:left;}
+nav ul li:last-child{padding-right:0px;}
+nav ul li a{color:#fff; font-size:18px; padding: 25px 20px; display:inline-block; transition: all 0.5s ease 0s;}
+nav ul li a:hover{background-color:#002e5b; color:#fde428; transition: all 0.5s ease 0s;}
+nav ul li a:hover i{color:#fde428; transition: all 0.5s ease 0s;}
+nav ul li a i{padding-right:10px; color:#002e5b; transition: all 0.5s ease 0s;}
+nav ul li a ul{
+    display: block;
+}
+
+input[type=checkbox]
+
+@media only screen and (max-width: 1440px) {
+section{max-width:95%;}
+}
+
+@media only screen and (max-width: 980px) {
+header{padding:20px 0px;}
+#logo{padding:0px;}
+input[type=checkbox] {position: absolute; top: -9999px; left: -9999px; background:none;}
+input[type=checkbox]:fous{background:none;}
+input[type=checkbox]:checked ~ nav {display:block;}
+
+nav{display:none; position:absolute; right:0px; top:53px; background-color:#002e5b; padding:0px; z-index:99;}
+nav ul{width:auto;}
+nav ul li{float:none; padding:0px; width:100%; display:table;}
+nav ul li a{color:#FFF; font-size:15px; padding:10px 20px; display:block; border-bottom: 1px solid rgba(225,225,225,0.1);}
+nav ul li a i{color:#fde428; padding-right:13px;}
+}
+
+@media only screen and (max-width: 480px) {
+section {max-width: 90%;}
+}
+
+@media only screen and (max-width: 360px) {
+#logo{font-size: 20px;}
+nav{top:47px;}
+}
+.submenu{
+    position: absolute;
+    display: none; 
+    width: 15%;
+    background: black;
+    float:inherit;
+}
+.submenu ul li{
+    display: block;
+    width: 100%;
+}
+
+nav ul li:hover .submenu{
+    display: block;
+}
+
